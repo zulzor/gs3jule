@@ -5,6 +5,21 @@ enum UserRole {
   child,
 }
 
+extension UserRoleExtension on UserRole {
+  String get nameInRussian {
+    switch (this) {
+      case UserRole.manager:
+        return 'Управляющий';
+      case UserRole.coach:
+        return 'Тренер';
+      case UserRole.parent:
+        return 'Родитель';
+      case UserRole.child:
+        return 'Ребенок';
+    }
+  }
+}
+
 class User {
   final String id;
   final String name;

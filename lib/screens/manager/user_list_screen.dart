@@ -26,19 +26,6 @@ class _UserListScreenState extends State<UserListScreen> {
     });
   }
 
-  String _roleToString(UserRole role) {
-    switch (role) {
-      case UserRole.manager:
-        return 'Управляющий';
-      case UserRole.coach:
-        return 'Тренер';
-      case UserRole.parent:
-        return 'Родитель';
-      case UserRole.child:
-        return 'Ребенок';
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,7 +52,7 @@ class _UserListScreenState extends State<UserListScreen> {
               final user = users[index];
               return ListTile(
                 title: Text(user.name),
-                subtitle: Text('${user.email} - ${_roleToString(user.role)}'),
+                subtitle: Text('${user.email} - ${user.role.nameInRussian}'),
                 trailing: IconButton(
                   icon: const Icon(Icons.delete, color: Colors.red),
                   onPressed: () async {
