@@ -83,4 +83,5 @@ flutter build apk
   - Email: `parent@school.com`
   - Пароль: `password`
 
-<!-- Test commit to enable PR -->
+<!-- Test commit to trigger PR -->
+<!-- Test commit to trigger PR from Jules branch -->
