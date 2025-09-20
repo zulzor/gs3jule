@@ -82,5 +82,3 @@ flutter build apk
 - **Родитель (Parent):**
   - Email: `parent@school.com`
   - Пароль: `password`
-
-<!-- Test commit to enable PR -->
