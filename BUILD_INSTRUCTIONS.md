@@ -84,3 +84,4 @@ flutter build apk
   - Пароль: `password`
 
 <!-- Test commit to trigger PR -->
+<!-- Test commit to trigger PR from Jules branch -->
